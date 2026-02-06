@@ -229,7 +229,7 @@ export default function AdminPage() {
           </Button>
           <div>
             <h1 className="text-lg font-bold">Admin Portal</h1>
-            <p className="text-xs text-zinc-500">
+            <p className="text-xs text-zinc-500" title="Metrics and reports for partner/investor feedback (turnover, sales at scale).">
               {me.data?.role === "admin" ? "Admin" : "Investor / Founder"} · {me.data?.email}
             </p>
           </div>
@@ -249,6 +249,9 @@ export default function AdminPage() {
       </header>
 
       <main className="p-4 max-w-5xl mx-auto space-y-6 pb-12">
+        <p className="text-sm text-zinc-500">
+          Metrics and reports for partner and investor feedback: turnover, sales at scale. Use CSV/PDF to share.
+        </p>
         {/* First year notice */}
         <Card className="bg-amber-500/10 border-amber-500/30">
           <CardContent className="pt-4">

@@ -2,6 +2,8 @@
 
 The **Admin Portal** is for the **admin** (lead developer / business) and **investors/founders** (partners). All metrics visible to the admin are also visible to partners to ensure transparency.
 
+**Partner & investor feedback:** The dashboard and reports (CSV / PDF) are intended to give partners and investors a clear view of **turnover metrics** (users, subscriptions, churn) and **sales that scale** (MRR, revenue split, withdrawals). Use the metrics and downloadable reports to share this feedback with partners or investors; the admin does not need to expose these concepts on the public landing or app.
+
 ---
 
 ## Access
