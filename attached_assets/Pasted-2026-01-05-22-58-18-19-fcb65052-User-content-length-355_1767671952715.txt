@@ -1,0 +1,120 @@
+2026-01-05 22:58:18.19
+fcb65052
+User
+'content-length': '355',
+2026-01-05 22:58:18.19
+fcb65052
+User
+Checkout error: Lo [Error]: No such price: 'price_1SmNyODtk7jZMAY8xl4VqPDD'
+2026-01-05 22:58:18.19
+fcb65052
+User
+server: 'nginx',
+2026-01-05 22:58:18.19
+fcb65052
+User
+date: 'Tue, 06 Jan 2026 03:58:18 GMT',
+2026-01-05 22:58:18.19
+fcb65052
+User
+detail: undefined,
+2026-01-05 22:58:18.19
+fcb65052
+User
+requestId: 'req_TyNemONl3ZANZP'
+2026-01-05 22:58:18.19
+fcb65052
+User
+doc_url: 'https://stripe.com/docs/error-codes/resource-missing',
+2026-01-05 22:58:18.19
+fcb65052
+User
+date: 'Tue, 06 Jan 2026 03:58:18 GMT',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'stripe-version': '2025-08-27.basil',
+2026-01-05 22:58:18.19
+fcb65052
+User
+raw: {
+2026-01-05 22:58:18.19
+fcb65052
+User
+doc_url: 'https://stripe.com/docs/error-codes/resource-missing',
+2026-01-05 22:58:18.19
+fcb65052
+User
+type: 'invalid_request_error',
+2026-01-05 22:58:18.19
+fcb65052
+User
+connection: 'keep-alive',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'access-control-allow-methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'content-type': 'application/json',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'x-wc': 'ABGHIJ',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',
+2026-01-05 22:58:18.19
+fcb65052
+User
+statusCode: 400,
+2026-01-05 22:58:18.19
+fcb65052
+User
+'access-control-allow-methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'idempotency-key': 'stripe-node-retry-06b56807-405a-4146-a9a6-e0f276f73ecb',
+2026-01-05 22:58:18.19
+fcb65052
+User
+headers: {
+2026-01-05 22:58:18.19
+fcb65052
+User
+'content-type': 'application/json',
+2026-01-05 22:58:18.19
+fcb65052
+User
+message: "No such price: 'price_1SmNyODtk7jZMAY8xl4VqPDD'",
+2026-01-05 22:58:18.19
+fcb65052
+User
+param: 'line_items[0][price]',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'request-id': 'req_TyNemONl3ZANZP',
+2026-01-05 22:58:18.19
+fcb65052
+User
+'content-length': '355',
+2026-01-05 22:58:18.19
+fcb65052
+User
+request_log_url: 'https://dashboard.stripe.com/logs/req_TyNemONl3ZANZP?t=1767671898',
+2026-01-05 22:58:18.19
+fcb65052
+User
+code: 'resource_missing',
+2026-01-05 22:58:18.68
+fcb65052
+User
+Received webhook evt_1SmRPRHkQy3W43y9dy5zjguO: customer.created for cus_TjvFiixA1A3EVw
+2026-01-05 22:58:18.73
+fcb65052
+User
+3:58:18 AM [express] POST /api/stripe/webhook 200 in 529ms :: {"received":true}

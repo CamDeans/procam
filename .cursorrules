@@ -1,0 +1,7 @@
+# ProCam - Cursor Rules
+
+- Use TypeScript and shared types from `@shared/`; path alias `@/` for client source.
+- Prefer Zod for API validation; use schemas in `shared/routes.ts` and `shared/schema.ts`.
+- Auth: OIDC via env (ISSUER_URL, OIDC_CLIENT_ID, OIDC_CLIENT_SECRET, BASE_URL). Session in PostgreSQL.
+- Stripe: Use STRIPE_SECRET_KEY and STRIPE_WEBHOOK_SECRET from env; products/prices from Stripe API.
+- No Replit-specific code or references; app is deployment-agnostic (local, Vercel, Railway, etc.).

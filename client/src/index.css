@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark mode first palette - Camera Interface Style */
+  --background: 240 10% 4%;
+  --foreground: 0 0% 98%;
+  
+  --card: 240 10% 7%;
+  --card-foreground: 0 0% 98%;
+ 
+  --popover: 240 10% 7%;
+  --popover-foreground: 0 0% 98%;
+ 
+  --primary: 45 93% 47%; /* Sony Alpha / Leica Orange/Gold Accent */
+  --primary-foreground: 240 10% 4%;
+ 
+  --secondary: 240 6% 15%;
+  --secondary-foreground: 0 0% 98%;
+ 
+  --muted: 240 6% 15%;
+  --muted-foreground: 240 5% 65%;
+ 
+  --accent: 240 6% 15%;
+  --accent-foreground: 0 0% 98%;
+ 
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 240 6% 15%;
+  --input: 240 6% 15%;
+  --ring: 45 93% 47%;
+ 
+  --radius: 0.5rem;
+
+  --font-sans: 'Manrope', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  /* Safe area padding for installed PWA on iOS */
+  @supports (padding-top: env(safe-area-inset-top)) {
+    @media all and (display-mode: standalone) {
+      .pwa-safe-top {
+        padding-top: max(1rem, env(safe-area-inset-top)) !important;
+      }
+      .pwa-safe-top-absolute {
+        top: env(safe-area-inset-top) !important;
+      }
+      .pwa-safe-top-margin {
+        margin-top: env(safe-area-inset-top) !important;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded-full hover:bg-zinc-700 transition-colors;
+  }
+}
+
+@layer components {
+  /* Dial/Wheel styling */
+  .control-dial {
+    @apply relative w-16 h-16 rounded-full border-2 border-zinc-800 bg-zinc-900/50 flex items-center justify-center cursor-pointer hover:border-primary/50 transition-all duration-300;
+  }
+  .control-dial-active {
+    @apply border-primary shadow-[0_0_15px_rgba(234,179,8,0.2)];
+  }
+
+  /* Glassmorphism panel */
+  .glass-panel {
+    @apply bg-black/40 backdrop-blur-md border border-white/10;
+  }
+}

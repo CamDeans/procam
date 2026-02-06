@@ -1,0 +1,119 @@
+2026-01-05 22:50:50.67
+bbe668af
+User
+'x-stripe-priority-routing-enabled': 'true',
+2026-01-05 22:50:50.67
+bbe668af
+User
+vary: 'Origin',
+2026-01-05 22:50:50.67
+bbe668af
+User
+server: 'nginx',
+2026-01-05 22:50:50.67
+bbe668af
+User
+type: 'StripeInvalidRequestError',
+2026-01-05 22:50:50.67
+bbe668af
+User
+'idempotency-key': 'stripe-node-retry-108b3e3f-c6a4-4537-b75f-1b7213c768e0',
+2026-01-05 22:50:50.67
+bbe668af
+User
+2026-01-05 22:50:50.67
+bbe668af
+User
+param: 'customer',
+2026-01-05 22:50:50.67
+bbe668af
+User
+'content-type': 'application/json',
+2026-01-05 22:50:50.67
+bbe668af
+User
+doc_url: 'https://stripe.com/docs/error-codes/resource-missing',
+2026-01-05 22:50:50.67
+bbe668af
+User
+'original-request': 'req_SLGqj0C17FR9o3',
+2026-01-05 22:50:50.67
+bbe668af
+User
+'request-id': 'req_SLGqj0C17FR9o3',
+2026-01-05 22:50:50.67
+bbe668af
+User
+'access-control-allow-origin': '*',
+2026-01-05 22:50:50.67
+bbe668af
+User
+'x-wc': 'ABGHIJ',
+2026-01-05 22:50:50.67
+bbe668af
+User
+param: 'customer',
+2026-01-05 22:50:50.67
+bbe668af
+User
+},
+2026-01-05 22:50:50.67
+bbe668af
+User
+requestId: 'req_SLGqj0C17FR9o3'
+2026-01-05 22:50:50.67
+bbe668af
+User
+at Bo (/home/runner/workspace/dist/index.cjs:99:12121)
+2026-01-05 22:50:50.67
+bbe668af
+User
+'content-security-policy': "base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=vpPDGWmkNZaY0KzjsX22qT_dgqK17f4uCck-Dr_BDF6L0XWn2C-hudCZi2kdnfNF9lCDrm_Spkp4ic-r",
+2026-01-05 22:50:50.67
+bbe668af
+User
+code: 'resource_missing',
+2026-01-05 22:50:50.67
+bbe668af
+User
+at s.toJSON.then.gs.message (/home/runner/workspace/dist/index.cjs:99:16754)
+2026-01-05 22:50:50.67
+bbe668af
+User
+headers: {
+2026-01-05 22:51:44.21
+bbe668af
+User
+3:51:41 AM [stripe] Initializing Stripe schema...
+2026-01-05 22:51:54.12
+bbe668af
+System
+system: received signal terminated
+2026-01-05 22:51:54.13
+bbe668af
+System
+command finished with error [node ./dist/index.cjs]: signal: terminated
+2026-01-05 22:51:54.16
+bbe668af
+System
+main done, exiting
+2026-01-05 22:51:56.41
+bbe668af
+User
+3:51:56 AM [express] serving on port 5000
+2026-01-05 22:51:57.31
+bbe668af
+User
+at listOnTimeout (node:internal/timers:581:17)
+2026-01-05 22:51:57.31
+bbe668af
+User
+at Timeout._onTimeout (/home/runner/workspace/node_modules/pg/lib/client.js:106:28)
+2026-01-05 22:51:57.31
+bbe668af
+User
+at process.processTimers (node:internal/timers:519:7)
+2026-01-05 22:51:57.31
+bbe668af
+User
+Failed to initialize Stripe: Error: timeout expired
